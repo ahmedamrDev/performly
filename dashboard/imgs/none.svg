@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>50B662EA-DF1D-4123-9B32-759329411D72</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M3.45,4.6 C4.0825,4.6 4.6,4.0825 4.6,3.45 C4.6,2.8175 4.0825,2.3 3.45,2.3 C2.8175,2.3 2.3,2.8175 2.3,3.45 C2.3,4.0825 2.8175,4.6 3.45,4.6 L3.45,4.6 Z M3.45,5.75 C2.8175,5.75 2.3,6.2675 2.3,6.9 C2.3,7.5325 2.8175,8.05 3.45,8.05 C4.0825,8.05 4.6,7.5325 4.6,6.9 C4.6,6.2675 4.0825,5.75 3.45,5.75 L3.45,5.75 Z M3.45,9.2 C2.8175,9.2 2.3,9.7175 2.3,10.35 C2.3,10.9825 2.8175,11.5 3.45,11.5 C4.0825,11.5 4.6,10.9825 4.6,10.35 C4.6,9.7175 4.0825,9.2 3.45,9.2 L3.45,9.2 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cards/product/hovered" transform="translate(-221.000000, -25.000000)">
+            <g id="icons/buttons/more/none" transform="translate(221.500000, 25.500000)">
+                <circle id="Oval" fill="#F4F4F4" fill-rule="evenodd" cx="11.5" cy="11.5" r="11.5"></circle>
+                <g id="Icon-/-More-Vert-/-Filled" transform="translate(11.500000, 11.500000) rotate(-90.000000) translate(-11.500000, -11.500000) translate(8.050000, 4.600000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="✱-/-Color-/-Icons-/-Selected-/-On-Surface-/-Inactive" mask="url(#mask-2)" fill="#000000" fill-opacity="0.54" fill-rule="evenodd">
+                        <rect id="Rectangle" x="0" y="0" width="7.00905172" height="14.0181034"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
