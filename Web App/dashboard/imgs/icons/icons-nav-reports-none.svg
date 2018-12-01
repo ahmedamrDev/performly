@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>D174CCB0-9AB9-4710-8214-5B511DACBD62</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icons/nav/reports/none" stroke="#ACB1B8" stroke-width="2">
+            <path d="M16.3333333,8.33333329 L11,8.33333329 C10.2636203,8.33333329 9.66666663,8.93028696 9.66666663,9.66666663 L9.66666663,20.3333334 C9.66666663,21.069713 10.2636203,21.6666667 11,21.6666667 L19,21.6666667 C19.7363797,21.6666667 20.3333334,21.069713 20.3333334,20.3333334 L20.3333334,12.3333333 L16.3333333,8.33333329 Z" id="Shape"></path>
+            <polyline id="Shape" points="16.3333333 8.33333329 16.3333333 12.3333333 20.3333334 12.3333333"></polyline>
+            <path d="M17.6666667,15.6666667 L12.3333333,15.6666667" id="Shape"></path>
+            <path d="M17.6666667,18.3333334 L12.3333333,18.3333334" id="Shape"></path>
+            <polyline id="Shape" points="13.6666667 13 13 13 12.3333333 13"></polyline>
+        </g>
+    </g>
+</svg>
