@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="67px" viewBox="0 0 81 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>0FAE0A58-677F-4788-A8CD-F2C0F53467D8</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 0 54.7659574 39.2982456 54.7659574 78.5964912 54.7659574 78.5964912 0"></polygon>
+        <filter x="-30.5%" y="-32.9%" width="161.1%" height="187.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.890196078   0 0 0 0 0.890196078   0 0 0 0 0.890196078  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-3" cx="15.4385965" cy="15.4468085" rx="15.4385965" ry="15.4468085"></ellipse>
+        <filter x="-76.1%" y="-59.9%" width="252.2%" height="252.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.00784313725   0 0 0 0 0.674509804   0 0 0 0 0.129411765  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/emailSent">
+            <g id="mail">
+                <g id="Group">
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M43.4596491,31.0438723 C41.1621053,33.0968936 37.4357895,33.0968936 35.1368421,31.0438723 L32.2077193,28.4558298 C23.0442105,36.6384255 0,54.7659574 0,54.7659574 L30.325614,54.7659574 L48.2722807,54.7659574 L78.5964912,54.7659574 C78.5964912,54.7659574 55.5522807,36.6384255 46.3887719,28.4558298 L43.4596491,31.0438723 Z" id="Path" fill="#E3E3E3"></path>
+                    <path d="M0,0 L35.1368421,31.0438723 C37.434386,33.0968936 41.1607018,33.0968936 43.4596491,31.0438723 L78.5964912,0 L0,0 Z" id="Path" fill="#F4F4F4"></path>
+                </g>
+                <g id="Group" transform="translate(49.122807, 35.106383)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#02AC21" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M22.8245614,16.4255319 L15.8070175,16.4255319 L15.8070175,9.40425532 C15.8070175,8.62910638 15.1796491,8 14.4035088,8 C13.6273684,8 13,8.62910638 13,9.40425532 L13,17.8297872 C13,18.6049362 13.6273684,19.2340426 14.4035088,19.2340426 L22.8245614,19.2340426 C23.6007018,19.2340426 24.2280702,18.6049362 24.2280702,17.8297872 C24.2280702,17.0546383 23.6007018,16.4255319 22.8245614,16.4255319 Z" id="Path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

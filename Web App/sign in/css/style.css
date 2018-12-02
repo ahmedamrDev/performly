@@ -73,10 +73,12 @@ input::placeholder {
 
 
 .main-container {
-  display: flex
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 .main__left{
-  width: 35%;
+  flex: 0 0 35%;
   background: url('../imgs/side-background@3x.png') no-repeat center center;
   height: 100vh;
   background-size: cover;
@@ -195,7 +197,8 @@ margin-bottom: 1.7rem
 
 
 .main__right{
-width: 65%;
+  flex-grow: 1;
+  overflow-y: scroll;
 align-self: center
 
 }
@@ -257,7 +260,7 @@ align-self: center
   align-items: center;
   margin-top: 3rem;
 }
-.form__requestButton {
+.form__signinButton {
   background: #ffa400;
   height: 5.8rem;
   border-radius: .5rem;
@@ -273,10 +276,10 @@ align-self: center
   transition: all .2s;
   margin-right: auto
 }
-.form__requestButton:hover {
+.form__signinButton:hover {
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
-.form__requestButton:active {
+.form__signinButton:active {
 
 box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
@@ -323,9 +326,10 @@ popup
 
 
 .modal__freedemo{
-  height: 100%;
+height: 150vh;
   width: 100%;
-  position: fixed;
+  display: none;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,0.8);
@@ -346,7 +350,7 @@ popup
   padding-top: 2rem; 
   padding-bottom: 2rem; 
 }
-.modal__container {
+.modal__container1, .modal__container2 {
   padding-left: 2rem; 
   padding-right: 2rem; 
 }
@@ -492,6 +496,36 @@ text-align: center;
 .form__group input {
   width: 100%;
 }
+
+
+.modal__container2 {
+  padding: 5.5rem 12.7rem;
+  display: none;
+}
+.modal__container2 {
+  margin: 0 auto;
+
+}
+.modal__container2 img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.8rem
+}
+.modal__container2 h4 {
+  margin-bottom: .7rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  color: #000000;
+}
+.modal__container2 p {
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  text-align: center;
+  color: var(--slate-grey);
+}
+
 .half-divider {display: flex;
 justify-content: space-between}
 

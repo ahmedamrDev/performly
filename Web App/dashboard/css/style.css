@@ -262,12 +262,12 @@ padding-top: 3.5rem
   border-radius: .4rem;
   margin-top: 2rem;
   margin-right: 1.3rem;
-  box-shadow: 0 3px 6px 0 rgba(0, 23, 59, 0.1);
+  box-shadow:0 12px 24px 0 rgba(0, 23, 59, 0.1);
   transition: all .2s
 
 }
 .main__right-content .main__content-upper .card:hover {
-  box-shadow: 0 12px 24px 0 rgba(0, 23, 59, 0.1);
+  box-shadow: 0 3px 6px 0 rgba(0, 23, 59, 0.1);
 }
 .main__right-content .main__content-upper .card .card__heading {
   display: flex;

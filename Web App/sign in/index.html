@@ -24,7 +24,7 @@
         <div class="popup__closebg"> <a href="#" class="popup__close">×</a> </div>
     </div>
     <div class="hr-divider"></div>
-    <div class="modal__container">
+    <div class="modal__container1">
           <div class="form__choose">
               <h4 class="form__choose-header">Select the products you need</h4>
               <div class="form__check-group">
@@ -84,6 +84,11 @@
            <input type="submit" class="form__requestButton" value="Request">
            <h5 class="form__footer-note">Only Valid Businesses will be considered</h5>
         </div>
+        <div class="modal__container2">
+            <img src="imgs/email-sent.svg" alt="">
+            <h4>Thanks for your interest in Performly!</h4>
+            <p>We will review your application and send you the demo within 24 hours.</p>
+        </div>
     </div>
 </div>
 
@@ -91,8 +96,8 @@
        <!--
            main
        -->
-      <main class="main-container">
-          <div class="main__left">
+      <main class="main-container" >
+          <div class="main__left" id="main-container">
                 <h1 class="main__left-heading">Empowering<br>Talents.</h1>
 
                 <div class="testimonials">
@@ -179,14 +184,14 @@
                         <input type="password" class="form__input" placeholder="••••••••••" id="Password" required=""> 
                     </div>
                 <div class="form-flexalign">
-                <input type="submit" class="form__requestButton" value="Sign in">
+                <input type="submit" class="form__signinButton" value="Sign in">
                 <a class="forgot-your-password" href="#">Forgot your Password?</a>
                  </div>
             </form>
 
             <div class="form-footer">
                     <span class="forgot-your-password" >Don’t Have an account?</span>
-                    <a href="#freedemo_popup" >Request a Demo</a>
+                    <a href="#freedemo_popup" class="request-demo" >Request a Demo</a>
             </div>
           </div>
         </div>
@@ -211,6 +216,22 @@
 		   }
 		}
 		setInterval(AutoRotate, 5000);
+        
+
+$('.popup__close').click(function() {
+  $('.modal__freedemo').css('display', 'none');
+});
+$('.request-demo').click(function() {
+  $('.modal__freedemo').css('display', 'block');
+  $('.modal__container1').css('display', 'block');
+  $('.modal__container2').css('display', 'none');
+});
+
+$('.form__requestButton').click(function() {
+  $('.modal__container1').css('display', 'none');
+  $('.modal__container2').css('display', 'block');
+});
+
 	});</script>
     </body>
 
