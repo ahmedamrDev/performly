@@ -226,7 +226,8 @@ padding-top: 3.5rem
 
 .nav-userInfo {
   display: block;
-  font: 13px Helvetica, Tahoma, serif;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 0; 
   padding: 0;
@@ -256,9 +257,6 @@ padding-top: 3.5rem
 
 }
 
-.nav-userInfo .dropdown-menu li a:hover, .nav-userInfo .dropdown-menu li a.dropdown-toggle-userInfo.active {
- border-bottom: 1px solid currentColor
-}
 .nav-userInfo li a.dropdown-toggle-userInfo {
   padding: 0;
 }
@@ -360,7 +358,8 @@ z-index: 999;
 
 .nav {
   display: block;
-  font: 13px Helvetica, Tahoma, serif;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 0; 
   padding: 0;
@@ -389,9 +388,6 @@ z-index: 999;
 
 }
 
-.nav .dropdown-menu li a:hover, .nav .dropdown-menu li a.dropdown-toggle.active {
- border-bottom: 1px solid currentColor
-}
 .nav li a.dropdown-toggle {
   padding: 0;
 }
