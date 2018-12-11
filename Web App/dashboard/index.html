@@ -56,11 +56,36 @@
             <div class="main__right-header">
                 <h2>Company Name</h2>
                 <div class="main__right-userInfo">
-                        <a href="#">
-                    <img src="imgs/person.jpg" alt="">
-                    <span>Mohamed Fekry</span>
-                    <span class="icon-chevron-down"></span>
-                            </a>
+                     
+                  
+                   
+
+
+                    <ul class="nav-userInfo">
+                        <li class="button-dropdown-userInfo">
+
+                            <a href="javascript:void(0)" class="dropdown-toggle-userInfo">   <img src="imgs/person.jpg" alt=""><span>Mohamed Fekry</span>      <span class="icon-chevron-down"></span></a>
+
+                          <ul class="dropdown-menu">
+                              <div class="dropdown-flex-userInfo">
+                                <li>
+                                    <a href="#">
+                                      view profile
+                                    </a>
+                                  </li>
+                            
+                                  <li>
+                                    <a href="#" class="delete">
+                                      logout
+                                    </a>
+                                  </li>
+                        </div>
+                          </ul>
+                        </li>
+
+
+                      </ul>
+
                 </div>
             </div>
 
@@ -70,11 +95,39 @@
                     <div class="wrapper">
                             <h3>{Company name}’s Products</h3>
                         <div class="card">
+     
+                              
+                            <div class="card__container">
                             <div class="card__heading">
-                                    <img src="imgs/intra.png" srcset="imgs/intra.png@2x.png 2x,  imgs/intra.png@3x.png 3x"   >
-                                    <img src="imgs/none.svg" class="card_menu" alt="">
+                                    <img class="card__heading-logo" src="imgs/intra.png" srcset="imgs/intra.png@2x.png 2x,  imgs/intra.png@3x.png 3x"   >
+                                 
+
+                                   <ul class="nav">
+                                    <li class="button-dropdown">
+       
+                                        <a href="javascript:void(0)" class="dropdown-toggle"> <img src="imgs/none.svg" class="card_menu" alt=""></a>
+ 
+                                      <ul class="dropdown-menu">
+                                          <div class="dropdown-flex">
+                                        <li>
+                                          <a href="#">
+                                            settings
+                                          </a>
+                                        </li>
+                                        <li>|</li>
+                                        <li>
+                                          <a href="#" class="delete">
+                                            delete
+                                          </a>
+                                        </li>
+                                    </div>
+                                      </ul>
+                                    </li>
+       
+         
+                                  </ul>
                             </div>
-                            <div class="card__info">
+                            <div class="card__info ">
                                 <div class="card__info-users">
                                     <span>users</span>
                                     <p>500</p>
@@ -84,36 +137,65 @@
                                         <p>15th Jan</p>
                                 </div>
                             </div>
-                            <div class="card__footer">
+                            <div class="card__footer ">
                                 <a href="#">
                                    <span>go to intra</span>
                                   <span class="icon-green card__footer--icon"></span>
                                 </a>
                             </div>
                         </div>
+                        </div>
                         <div class="card">
-                                <div class="card__heading">
-                                        <img src="imgs/talent.png" srcset="imgs/talent.png@2x.png 2x,  imgs/talent.png@3x.png 3x"   >
-                                        <img src="imgs/none.svg" class="card_menu" alt="">
-                                </div>
-                                <div class="card__info">
-                                    <div class="card__info-users">
-                                        <span>users</span>
-                                        <p>500</p>
+     
+                              
+                            <div class="card__container">
+                            <div class="card__heading">
+                                    <img class="card__heading-logo" src="imgs/talent.png" srcset="imgs/talent.png@2x.png 2x,  imgs/talent.png@3x.png 3x"   >
+                                 
+
+                                   <ul class="nav">
+                                    <li class="button-dropdown">
+       
+                                        <a href="javascript:void(0)" class="dropdown-toggle"> <img src="imgs/none.svg" class="card_menu" alt=""></a>
+ 
+                                      <ul class="dropdown-menu">
+                                          <div class="dropdown-flex">
+                                        <li>
+                                          <a href="#">
+                                            settings
+                                          </a>
+                                        </li>
+                                        <li>|</li>
+                                        <li>
+                                          <a href="#" class="delete">
+                                            delete
+                                          </a>
+                                        </li>
                                     </div>
-                                    <div class="card__info-payment">
-                                            <span>next payment</span>
-                                            <p>15th Jan</p>
-                                    </div>
+                                      </ul>
+                                    </li>
+       
+         
+                                  </ul>
+                            </div>
+                            <div class="card__info ">
+                                <div class="card__info-users">
+                                    <span>users</span>
+                                    <p>500</p>
                                 </div>
-                                <div class="card__footer">
-                                    <a href="#">
-                                       <span>go to talent</span>
-                                       <span class="icon-green card__footer--icon"></span>
-                                    </a>
+                                <div class="card__info-payment">
+                                        <span>next payment</span>
+                                        <p>15th Jan</p>
                                 </div>
                             </div>
-                          
+                            <div class="card__footer ">
+                                <a href="#">
+                                   <span>go to intra</span>
+                                  <span class="icon-green card__footer--icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
 
@@ -160,7 +242,47 @@
 
 
       </main>
-      <script defer src="js/svgxuse.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script> jQuery(document).ready(function (e) {
+        function t(t) {
+            e(t).bind("click", function (t) {
+                t.preventDefault();
+                e(this).parent().fadeOut()
+            })
+        }
+        e(".dropdown-toggle").click(function () {
+            var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+            e(".button-dropdown .dropdown-menu").hide();
+            e(".button-dropdown .dropdown-toggle").removeClass("active");
+            $( ".card__info, .card__footer, .card__heading-logo" ).removeClass( "low-opacity");
+            if (t) {
+                e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+                e(this).parents(".card__container").find( ".card__info, .card__footer, .card__heading-logo" ).addClass( "low-opacity");
+            }
+       
+        });
+        e(".dropdown-toggle-userInfo").click(function () {
+            var t = e(this).parents(".button-dropdown-userInfo").children(".dropdown-menu").is(":hidden");
+            e(".button-dropdown-userInfo .dropdown-menu").hide();
+            e(".button-dropdown-userInfo .dropdown-toggle").removeClass("active");
+            $( ".card__info, .card__footer, .card__heading-logo" ).removeClass( "low-opacity");
+            if (t) {
+                e(this).parents(".button-dropdown-userInfo").children(".dropdown-menu").toggle().parents(".button-dropdown-userInfo").children(".dropdown-toggle").addClass("active")
+                e(this).parents(".card__container").find( ".card__info, .card__footer, .card__heading-logo" ).addClass( "low-opacity");
+            }
+       
+        });
+        e(document).bind("click", function (t) {
+            var n = e(t.target);
+            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+            if (!n.parents().hasClass("button-dropdown-userInfo")) e(".button-dropdown-userInfo .dropdown-menu").hide();
+        });
+        e(document).bind("click", function (t) {
+            var n = e(t.target);
+            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+            if (!n.parents().hasClass("button-dropdown")) e( ".card__info, .card__footer, .card__heading-logo" ).removeClass( "low-opacity");
+        })
+    });</script>
     </body>
 
 
