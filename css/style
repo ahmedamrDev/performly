@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/') format('woff2'),
+      url('../fonts/AvenirLTStd-Medium.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Medium.ttf') format('truetype'),
+      url('../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Heavy.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Heavy.ttf') format('truetype'),
+      url('../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Avenir LT Std';
+  font-weight: 500;
+
+  line-height: 1.7;
+  color: #606977; 
+background: #ffffff;}
+
+input::placeholder {
+  color: #acb1b8;
+  
+}
+.hr-divider {
+  color: #fff;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.hr-divider::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+}
+
+
+
+.switch {
+  position: relative;
+  /* height: 0.6rem; */
+  width: 20rem;
+  margin: 2rem auto;
+  background: transparent;
+  border-radius: 5rem;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 9.8rem;
+  line-height: 26px;
+  font-size: 2.4rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  
+  color: #fff;
+
+
+  transition: all 0.15s ease-out;
+
+ 
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 6rem;
+  /* Note: left: 50%; doesn't transition in WebKit */
+}
+
+.switch-selection {
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  left: 2px;
+  display: block;
+  width: 9.8rem;
+  height: 4.2rem;
+  border-radius: 5rem;
+  background-color: #ffa400;
+  transition: left 0.15s ease-out;
+}
+
+
+
+.flex_container {
+  display: flex;
+  width: 90%;
+  padding: 5rem;
+  justify-content: space-between;
+  margin: 0 auto
+}
+.pricing_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  width: 30%;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 12px 24px 0 rgba(0, 23, 59, 0.1);
+  transition: all .2s;
+  padding: 2rem
+}
+.pricing_card:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 23, 59, 0.1);
+}
+.flex_container .pricing_card:first-child {
+  border-top: solid 6px #024abb
+}
+.flex_container .pricing_card:nth-child(2) {
+  border-top: solid 6px #ffa400
+}
+.flex_container .pricing_card:nth-child(3) {
+  border-top: solid 6px red
+}
+.pricing_card .pricing_card-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.pricing_card .priceInfo {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.pricing_card .planPrice {
+  line-height: 4rem;
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  text-align: center;
+}
+.pricing_card .planPrice::before {
+  content: "$";
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  color: #000;
+
+  vertical-align: top;
+}
+.pricing_card .planPeriod {
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #000;
+  align-self: flex-end;
+}
+
+.pricing_card .pricing_card-choosebutton {
+  background: #ffa400;
+  height: 4.8rem;
+  border-radius: .2em;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Avenir LT Std';
+  font-weight: 900;
+  font-style: normal;
+  border: none;
+  width: 15rem;
+  cursor: pointer;
+  transition: all .2s;
+  margin-bottom: 2rem;
+}
+.pricing_card .pricing_card-choosebutton:hover {
+  background: #ffb42e;
+}
+.pricing_card ul {
+  list-style: none;
+  text-align: center;
+
+}
+.pricing_card ul .pricing_list {
+  font-size: 1.4rem;
+  color: #606977;
+  margin-bottom: 1.2rem
+}
+
+
+
+
+

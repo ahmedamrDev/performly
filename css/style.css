@@ -16,6 +16,15 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Book.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Book.ttf') format('truetype'),
+      url('../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 *,
 *::after,
@@ -45,255 +54,327 @@ body {
 
   line-height: 1.7;
   color: #606977; 
-background: #606977;}
+background: #ffffff;}
 
 input::placeholder {
-  color: #acb1b8
-}
-
-
-.modal__freedemo {
-  width: 57rem;
-  border-radius: .4rem;
-  background-color: #ffffff;
-  margin: 5rem auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem; 
-  padding-bottom: 2rem; 
-}
-.modal__container {
-  padding-left: 2rem; 
-  padding-right: 2rem; 
-}
-
-.form__head {
-  display: flex;
-  justify-content: center;
-  padding-left: 2rem; 
-  padding-right: 2rem; 
-}
-.popup__closebg {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 100px;
-  position: relative;
-  background-color: #e8ecf2;
-}
-.popup__close {
-position: absolute;
-top: -0.3rem;
-left: .6rem;
-text-align: center;
-  font-size: 1.8rem;
-  font-weight: 900;
-  text-decoration: none;
-  color: #000;
+  color: #acb1b8;
+  
 }
 .hr-divider {
   color: #fff;
-  margin-top: 2rem
+  margin-bottom: 2rem;
+  width: 100%;
 }
 .hr-divider::before {
   content: "";
   display: block;
   width: 100%;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid #e3e3e3;
 }
-.form__head-text {
+
+
+
+.heading_box {
+  width: 80%;
+  margin: 5rem auto;
+  color: #000
+}
+.heading_box h1{
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.heading_box p{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #606977;
+  width: 60%
+}
+
+
+
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem
+}
+.tab-group .tab-group-wrap {
+  position: relative;
+  width: 50%;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li {
+  height: 6rem;
+  width: 100%;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(67, 81, 255, 0.1);
+  color: rgb(2, 74, 187);
+  font-size: 20px;
+  float: left;
+  width: 100%;
   text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+
+}
+
+.tab-group .active a {
+  background: rgb(2, 74, 187);
+  color: #ffffff;
+
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+
+
+.carrot, .carrot:before, .carrot:after {width: 4rem;height: 4rem;}
+.carrot {
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin: 0 auto 0;
+	border-radius: 1rem;
+	z-index: -1;
+	transform: translateY(-70%) translateX(-50%) rotate(30deg) skewY(30deg) scaleX(.866);
+	cursor: pointer;
+	pointer-events: none;
+} 
+.carrot:before, .carrot:after {
+	position: absolute;
+	background: rgb(2, 74, 187);
+	pointer-events: auto;
+	content: '';
+}
+.carrot:before {
+	border-radius: 20% 20% 20% 53%;
+	transform: scaleX(1.155) skewY(-30deg) rotate(150deg) translateY(-42.3%) 
+			skewX(30deg) scaleY(.866) translateX(-24%);
+}
+.carrot:after {
+	border-radius: 20% 20% 53% 20%;
+	transform: scaleX(1.155) skewY(-30deg) rotate(150deg) translateY(-42.3%) 
+			skewX(-30deg) scaleY(.866) translateX(24%);
+}
+
+
+
+
+
+.switch {
+  position: relative;
+  /* height: 0.6rem; */
+  width: 20rem;
+  margin: 2rem auto;
+  background: transparent;
+  border-radius: 5rem;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 9.8rem;
+  line-height: 26px;
   font-size: 1.8rem;
-  font-weight: 900;
-  margin: auto;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  
+  color: #ffa400;
+
+
+  transition: all 0.15s ease-out;
+
+ 
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 9.7rem;
+  /* Note: left: 50%; doesn't transition in WebKit */
+}
+
+.switch-selection {
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  left: 2px;
+  display: block;
+  width: 9.8rem;
+  height: 4.2rem;
+  border-radius: 5rem;
+  background-color: #fff5e2;
+  transition: left 0.15s ease-out;
+}
+
+
+
+.pricing_container {
+  display: flex;
+  width: 80%;
+  
+ 
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+.pricing_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  width: 30%;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 12px 24px 0 rgba(0, 23, 59, 0.1);
+  transition: all .2s;
+  padding: 2rem
+}
+.pricing_card:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 23, 59, 0.1);
+}
+.pricing_container .pricing_card:first-child {
+  border-top: solid 6px #024abb
+}
+.pricing_container .pricing_card:nth-child(2) {
+  border-top: solid 6px #ffa400
+}
+.pricing_container .pricing_card:nth-child(3) {
+  border-top: solid 6px red
+}
+.pricing_card .pricing_card-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
   color: #000;
 }
 
-.form__choose-header {
-  font-size: 1.8rem;
-  color: #606977;
-  font-weight: 500;
-  width: 100%;
-  margin-bottom: 1.3rem;
-  margin-top: 3rem;
-}
-.form__choose {
+.pricing_card .priceInfo {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between
-}
 
-.form__check-group {
- 
-  height: 6.6rem;
-  width: 48%;
-  border-radius: .4rem;
-  background-color: #ffffff;
-  border: 1px solid #e3e3e3;
-  transition: all .4s ease-out
 }
-.form__check-input {
-  position: absolute;
-  opacity: 0;
-}
-.form__check-input + .form__check-label {
+.pricing_card .planPrice {
+  line-height: 4rem;
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #000;
   position: relative;
-  cursor: pointer;
-  padding: 0;
+  text-align: center;
 }
-.form__check-input + .form__check-label:before {
-  content: '';
-  margin-right: 1.8rem;
-  margin-left: 2.4rem;
-  margin-top: -2rem;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 1.8rem;
-  height: 1.8rem;
-  background: #f4f4f4;
-  border-radius: .4rem;
-}
-.form__check-input:hover + .form__check-label:before {
-  background: #02ac21;
-}
+.pricing_card .planPrice::before {
+  content: "$";
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  color: #000;
 
-.form__check-input:checked + .form__check-label:before {
-  background: #02ac21;
+  vertical-align: top;
 }
-
-.form__check-input:checked + .form__check-label:after {
-  content: '';
-  position: absolute;
-  left: 2.8rem;
-  top: -1.1rem;
-  background: white;
-  width: 2px;
-  height: 2px;
-  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.pricing_card .planPeriod {
+  line-height: 1.9rem;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #000;
+  align-self: flex-end;
 }
-.form__check-label {
+.pricing_card .per_user {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem
+}
+.pricing_card .pricing_team-input {
   width: 100%;
-}
-.form__check-group:hover {
-  border: none;
-  box-shadow: 0 .6rem 1.4rem 0 rgba(96, 105, 119, 0.12);
+  height: 3.5rem;
+  box-shadow: none;
+  border:1px solid #e3e3e3;
+  border-radius: 4px;
 }
 
-.form__choose-image {
-  height: 4rem;
-  margin-top: 1.5rem;
-}
 
 .form__group {
   display: flex;
   flex-direction: column;
-  margin-top: 2.2rem
+  width: 90%;
 }
+
 .form__label{
-  margin-bottom: .8rem;
+  margin-bottom: .2rem;
   font-size: 1.6rem;
   font-weight: 500;
+  text-align: center
 }
 .form__input {
+  width: 100%;
   height: 5.4rem;
   padding: 1.6rem;
   font-size: 1.6rem;
   color: #000;
-  font-weight: 500;
+  font-weight: normal;
   border-radius: .4rem;
-  border: 1px solid #e3e3e3
+  border: 1px solid #e3e3e3;
+  margin-bottom: 2rem;
 }
 .form__group input {
   width: 100%;
 }
-.half-divider {display: flex;
-justify-content: space-between}
-
-.half-divider .form__group {
-  width: 48%;
-}
-.third-divider {
-  display: flex;
-justify-content: space-between
-}
-.third-divider  .form__group {
-  width: 66%;
-}
-.third-divider  .form__group:first-child {
-  width: 30%;
-}
-.form__input-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("../imgs/dropmenu.png");
-  background-repeat: no-repeat;
-  background-position: right center;
- 
-}
-.form__requestButton {
-  background: #02ac21;
-  height: 8rem;
-  border-radius: .5rem;
+.pricing_card .pricing_card-choosebutton {
+  background: #ffa400;
+  height: 4.8rem;
+  border-radius: .2em;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: 'Avenir LT Std';
   font-weight: 900;
   font-style: normal;
   border: none;
-  width: 100%;
+  width: 15rem;
   cursor: pointer;
-  margin-top: 3rem;
-  transition: all .2s
+  transition: all .2s;
+  margin-bottom: 2rem;
 }
-.form__requestButton:hover {    background: #03c727;}
-.form__footer-note {
-  font-size: 1.4rem;
+.pricing_card .pricing_card-choosebutton:hover {
+  background: #ffb42e;
+}
+.pricing_card ul {
+  list-style: none;
   text-align: center;
-  width: 100%;
-  margin-top: 1.5rem
+
+}
+.pricing_card ul .pricing_list {
+  font-size: 1.4rem;
+  color: #606977;
+  margin-bottom: 1.2rem
 }
 
 
-@media (max-width: 75em) {
-  html {
-    font-size: 56.25%; } }
-@media (max-width: 56.25em) {
-  .modal__freedemo {
-    width: 90%; } }
 
 
-  @media (max-width: 512px) {
-      .modal__freedemo {
-        width: 90%; }
-        .form__check-group {
-          width: 100%;
-        }
-        .form__check-group:not(:first-child) {
-          margin-top: 2rem
-        }
-        .form__input {
-          width: 100%;
-        }
-        .half-divider {
-          display: inherit;
-        }
-        .half-divider .form__group {
-          width: 100%;
-        }
-        .third-divider {
-          display: inherit;
-        }
-        .third-divider  .form__group {
-          width: 100%;
-        }
-        .third-divider  .form__group:first-child {
-          width: 100%;
-        }
-      }
 
-
-@media (min-width: 112.5em) {
-  html {
-    font-size: 75%; } }
