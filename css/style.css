@@ -72,7 +72,46 @@ input::placeholder {
   border-top: 1px solid #e3e3e3;
 }
 
+/*
+==========
+nav 
+==========
+*/
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle span {
+  width: 2.2rem;
+  height: 2px;
+  background: #003eb3;
+  margin: 6px 0;
+  display: block;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  cursor: pointer;
+}
 
+#login {
+  background: #ffa400;
+  border-color: #ffa400;
+  color: #fff;
+  outline: none;
+  border-radius: 1rem;
+ 
+  text-align: center;
+  padding: .3rem;
+  margin-top: .9rem;
+  width: 10rem;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .heading_box {
   width: 80%;
@@ -177,7 +216,7 @@ input::placeholder {
 .switch {
   position: relative;
   /* height: 0.6rem; */
-  width: 20rem;
+  width: 40rem;
   margin: 2rem auto;
   background: transparent;
   border-radius: 5rem;
@@ -187,7 +226,7 @@ input::placeholder {
   position: relative;
   z-index: 2;
   float: left;
-  width: 9.8rem;
+  width: 17.8rem;
   line-height: 26px;
   font-size: 1.8rem;
   font-weight: normal;
@@ -219,7 +258,7 @@ input::placeholder {
  
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 9.7rem;
+  left: 18rem;
   /* Note: left: 50%; doesn't transition in WebKit */
 }
 
@@ -229,19 +268,22 @@ input::placeholder {
   top: -8px;
   left: 2px;
   display: block;
-  width: 9.8rem;
+  width: 16.8rem;
   height: 4.2rem;
   border-radius: 5rem;
   background-color: #fff5e2;
   transition: left 0.15s ease-out;
 }
-
+.year_offer {
+font-size: 1.2rem;
+}
 
 
 .pricing_container {
   display: flex;
   width: 80%;
-  
+  flex-wrap: wrap;
+
  
   justify-content: space-between;
   margin: 0 auto;
@@ -378,3 +420,96 @@ input::placeholder {
 
 
 
+.offers_container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+.offers_card {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #fff;
+
+  width: 48%;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 12px 24px 0 rgba(0, 23, 59, 0.1);
+  transition: all .2s;
+  padding: 2rem
+}
+.offers_card:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 23, 59, 0.1);
+}
+.offers_container .offers_card {
+  border-top: solid 6px #024abb
+}
+.offers_container .offers_card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #000;}
+
+.offers_container .offers_card .offers_card-list{
+  width:100%;
+  
+  overflow:hidden;
+margin: 0;
+  list-style: none;
+}
+.offers_container .offers_card .offers_card-list li{
+  line-height:1.5em;
+  color: #606977;
+  float:left;
+  display:inline;
+  width:50%;
+margin-bottom: 1.2rem}
+  .offers_container .offers_card .offers_card-list li:nth-child(odd){
+font-weight: 900}
+.offers_container .offers_card .offers_card-list li:nth-last-child(-n+2) {
+  margin-bottom: 0
+}
+ 
+.offers_container .offers_card .offers_card-list li.list-headline {
+  font-size:1.4rem;
+  color: #000;
+  margin-bottom: .8rem;
+  font-weight: 900
+}
+
+
+
+
+/* ==========
+  footer 
+  =========== */
+
+  .powerdByDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+    .powerdByDiv a img {
+        width: 11.3rem;
+    }
+a.UsersLoveUs {
+    margin-left: 1.2rem;
+}
+a.capteraLnk {
+    margin-top: 3.3rem;
+    margin-left: 1.2rem;
+}
+
+
+
+
+@media (max-width: 870px) {
+  .pricing_container {
+  }
+  .pricing_card {
+    width: 47%;
+    margin-bottom: 3rem
+  }
+}

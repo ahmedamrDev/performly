@@ -3,14 +3,173 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>performly</title>
     </head>
+    <style>
+            .FaceBook {
+                display: block;
+            }
+
+            div#DigiCertClickID_ArRhxwKsSeal {
+                margin-top: 44px !important;
+            }
+
+            div#DigiCertClickID_ArRhxwKs span {
+                display: none !important;
+            }
+
+            @media (min-width: 768px) {
+                .nav_item {
+                    display: none !important;
+                }
+            }
+
+            @media (max-width: 768px) {
+                #copyright {
+                    /*display: none;
+              margin-top:20px;*/
+                }
+            }
+
+            .navbar-nav > li > a, .navbar-brand {
+                color: #666666;
+                font-size: 1.5rem;
+            }
+
+            .navbar-brand {
+                margin-left: 0;
+            }
+
+            .navbar-right {
+                padding-top: 7px;
+            }
+
+            a:hover {
+                text-decoration: none;
+                background-color: transparent;
+                color: #ff6c00;
+            }
+
+            ul.nav a:hover {
+                color: #000;
+            }
+
+            nav.navbar {
+                min-height: 60px !important;
+            }
+
+
+
+
+            #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul > li > a {
+                color: black;
+            }
+
+            /*Menu break point*/
+            @media (max-width: 870px) {
+                .navbar-header {
+                    float: none;
+                }
+
+                .navbar-toggle {
+                    display: block;
+                    margin-right: 0;
+                    height: 35px;
+                    padding-top: 5px;
+                }
+
+                .navbar-collapse {
+                    border-top: 1px solid transparent;
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+                }
+
+                    .navbar-collapse.collapse {
+                        display: none !important;
+                    }
+
+                .navbar-nav {
+                    float: none !important;
+                    margin: 7.5px -15px;
+                }
+
+                    .navbar-nav > li {
+                        float: none;
+                    }
+
+                        .navbar-nav > li > a {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+
+                .navbar-text {
+                    float: none;
+                    margin: 15px 0;
+                }
+                /* since 3.1.0 */
+                .navbar-collapse.collapse.in {
+                    display: block !important;
+                }
+
+                .collapsing {
+                    overflow: hidden !important;
+                }
+            }
+        </style>
+
     <body>
+
+            <nav class="navbar navbar-top" style="margin: 0; background-color: #ffffff; border-bottom: 1px solid #e3e3e3;">
+                    <div class="container-fluid" style="margin: 0 5%;">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-left" href="/" style="color: #eee"></a>
+                            <a href="/" class="HomeLogo">
+                                <img src="imgs/footer/performlyLogo.png" alt="Logo" class="img-responsive">
+                            </a>
+        
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="http://performly.com/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li style=""><a href="/Talent.aspx">Talent</a></li>
+                                        <li style=""><a href="/Intra.aspx">Intra</a></li>
+        
+                                    </ul>
+                                </li>
+        
+                                <li><a href="http://blog.performly.com/">Blog</a></li>
+                                <li><a href="/Get-Free-Trial-Talent-Performance-Management-Internal-HRMS-Softwares-Solutions-Applications.aspx">Pricing</a></li>
+                                <li><a href="/Contactus.aspx">Contact Us</a></li>
+                                
+                                <li><a id="login" data-toggle="modal" data-target="#editModal">Free Demo</a></li>
+        
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+
         <div class="heading_box">
             <h1>Pricing</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim, non amet at  mollitia odio suscipit ea consequuntur quo debitis!</p>
@@ -33,9 +192,11 @@
             <label for="monthly" class="switch-label switch-label-off">Monthly</label>
           
             <input type="radio" class="switch-input" name="plan" value="month" id="month" checked>
-            <label for="month" class="switch-label switch-label-on">Yearly</label>
+            <label for="month" class="switch-label switch-label-on">Yearly <span class="year_offer">(GET 10% OFF!)</span></label>
+            
             <span class="switch-selection"></span>
           </div>
+          
        <div class="pricing_container">
            <div class="pricing_card">
                <img src="" alt="">
@@ -46,12 +207,8 @@
                 </div>
                 <span class="per_user">Per user</span>
                 <div class="hr-divider"></div>
-                <div class="form__group">
-                    <label for="team_number" class="form__label">Team members</label>
-                    <input type="number" class="form__input" placeholder="Members mount" id="team_number" required=""> 
-                </div>
-                <button class="pricing_card-choosebutton">Choose Plan</button>
-                <div class="hr-divider"></div>
+               
+                    
                <ul>
                   <li class="pricing_list">Attendance Management</li>
                   <li class="pricing_list">Compensation / Overtime Management</li>
@@ -72,12 +229,7 @@
              </div>
              <span class="per_user">Per user</span>
              <div class="hr-divider"></div>
-                <div class="form__group">
-                    <label for="team_number" class="form__label">Team members</label>
-                    <input type="number" class="form__input" placeholder="Members mount" id="team_number" required=""> 
-                </div>
-             <button class="pricing_card-choosebutton">Choose Plan</button>
-             <div class="hr-divider"></div>
+               
             <ul>
                <li class="pricing_list">On-Boarding Recruitment System</li>
                <li class="pricing_list">Resignation System</li>
@@ -99,12 +251,7 @@
              </div>
              <span class="per_user">Per user</span>
              <div class="hr-divider"></div>
-                <div class="form__group">
-                    <label for="team_number" class="form__label">Team members</label>
-                    <input type="number" class="form__input" placeholder="Members mount" id="team_number" required=""> 
-                </div>
-             <button class="pricing_card-choosebutton">Choose Plan</button>
-             <div class="hr-divider"></div>
+                
             <ul>
                <li class="pricing_list">Loan System</li>
                <li class="pricing_list">Training System</li>
@@ -119,13 +266,122 @@
 
            </div>
        </div>
+
+       <div class="heading_box">
+            <h1>Offers</h1>
+        </div>
+        <div class="offers_container">
+            <div class="offers_card">
+                <h2>Team + Payroll</h2>
+            <p>
+
+                    <ul class="offers_card-list">
+                        <li class="list-headline">Staff number</li>
+                        <li class="list-headline">Price/user</li>
+                        <li>1-250</li>
+                        <li>5$</li>
+                        <li>250-500</li>
+                        <li>4$</li>
+                        <li>500-500</li>
+                        <li>3$</li>
+                        <li>1500+</li>
+                        <li>2$</li>
+                      </ul>
+            </p>
+        </div>
+            <div class="offers_card">
+                <h2>
+                Enterprise + Payroll + Talent
+                </h2>
+            <p>
+                    <ul class="offers_card-list"> 
+                            <li class="list-headline">Staff number</li>
+                            <li class="list-headline">Price/user</li>
+                            <li>1-250</li>
+                            <li>5$</li>
+                            <li>250-500</li>
+                            <li>4$</li>
+                            <li>500-500</li>
+                            <li>3$</li>
+                            <li>1500+</li>
+                            <li>2$</li>
+                    
+                      </ul>
+            </p>
+        </div>
+        </div>
     </div>
 
     <div id="talent">
         </div>
     </div>
-    
+    <footer>
+        <div style="background-color: rgb(0, 63, 175); display: inline-table; margin-top: 100px; padding-top: 30px; width: 100%; padding-left: 5%; padding-right: 5%; position: relative; bottom: -5px; visibility: visible; animation-name: fadeIn;" class="wow fadeIn">
+            <!--         <span class ="footerlink">Features</span> -->
+            <a href="/pricing.aspx" class="footerlink" style="display: none">Pricing</a>
+            <a style="display: none" href="/blog.aspx" class="footerlink">Blog</a>
+            <!--         <span class ="footerlink">About</span> -->
+            <!-- <a class="footerlink" href="mailto:info@performly.com">Contact</a> -->
+            <div class="col-md-3">
+                <div style="margin: 20px 0px 10px;" class="sharingDiv">
+
+                    <a href="https://www.linkedin.com/company/performly" style="margin-right: 5px" target="_blank">
+                        <img style="width: 30px;" src="imgs/footer/linkedin.png" alt="Linkedin "></a>
+                    <a href="https://twitter.com/performlyMENA" style="margin-right: 5px" target="_blank">
+                        <img style="width: 30px;" src="imgs/footer/twitter.png" alt="Twitter "></a>
+                    <a href="https://www.facebook.com/Performly.software/" style="margin-right: 5px" target="_blank">
+                        <img style="width: 30px;" src="imgs/footer/facebook.png" alt="Facebook"></a>
+                    <div style="padding-top: 12px">
+                        <a style="font-family: ProximaRegular; font-size: 16px; font-color: white" href="/Contactus.aspx">Contact us</a><br>
+                        <span style="color: #fff; font-family: ProximaRegular;">2035 Sunset Lake Road, Suite B-2, in the city of Newark,<br>
+                            State of Delaware zip code 19702 and county of New Castle. USA.<br>
+                            
+                            
+
+                        </span>
+                        <br>
+                        <span id="copyright" style="font-family: ProximaRegular; color: #ffffff; font-size: 16px; opacity: 0.5;">Performly © 2018</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="FaceBook">
+                    <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/performly.software/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" data-colorscheme="light" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=354&amp;href=https%3A%2F%2Fwww.facebook.com%2Fperformly.software%2F&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true"><span style="vertical-align: bottom; width: 300px; height: 214px;"><iframe name="f28e20fe78cb47c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/v2.12/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fj-GHT1gpo6-.js%3Fversion%3D43%23cb%3Dfdfb61a08680ec%26domain%3Dwww.performly.com%26origin%3Dhttps%253A%252F%252Fwww.performly.com%252Ff33eec3fcaef1a%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=354&amp;href=https%3A%2F%2Fwww.facebook.com%2Fperformly.software%2F&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true" style="border: none; visibility: visible; width: 300px; height: 214px;" class=""></iframe></span></div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="powerdByDiv">
+                    <!-- Begin DigiCert site seal HTML and JavaScript -->
+                    <div id="DigiCertClickID_ArRhxwKs" data-language="en"><div id="DigiCertClickID_ArRhxwKsSeal" style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: default;"><img src="//seal.digicert.com/seals/cascade/?s=ArRhxwKs,3,m,www.performly.com" alt="DigiCert Seal" tabindex="0" style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: pointer;"></div><span style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: default; color: black;">
+                        <a href="https://www.digicert.com/wildcard-ssl-certificates/" style="text-decoration: none; text-align: center; display: inline; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; clear: both; float: none; cursor: pointer; color: black;">DigiCert.com</a>
+                    </span></div>
+                    <script type="text/javascript">
+                        var __dcid = __dcid || []; __dcid.push(["DigiCertClickID_ArRhxwKs", "3", "m", "black", "ArRhxwKs"]); (function () { var cid = document.createElement("script"); cid.async = true; cid.src = "//seal.digicert.com/seals/cascade/seal.min.js"; var s = document.getElementsByTagName("script"); var ls = s[(s.length - 1)]; ls.parentNode.insertBefore(cid, ls.nextSibling); }());
+                </script><script async="" src="//seal.digicert.com/seals/cascade/seal.min.js"></script>
+
+                    <!-- End DigiCert site seal HTML and JavaScript -->
+                    <a href="https://www.g2crowd.com/products/performly/" target="_blank" class="UsersLoveUs">
+                        <img border="0" src="imgs/footer/Asset_Badge_UsersLoveUs.png">
+                    </a>
+
+                    <a class="capteraLnk" href="http://www.capterra.com/performance-appraisal-software/reviews/150134/Performly/Performly" target="_blank">
+                        <img border="0" src="imgs/footer/Capterra.png">
+                    </a>
+
+                    <a href="http://a15.com/en-us/" target="_blank" class="A15Logo">
+                        <img src="imgs/footer/powered.png" alt="Powered"></a>
+                </div>
+            </div>
+
+
+            
+            <div style="padding-bottom: 10px;">
+            </div>
+        </div>
+    </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script>
 
 $('.tab a').on('click', function (e) {
