@@ -208,7 +208,9 @@ nav
 	transform: scaleX(1.155) skewY(-30deg) rotate(150deg) translateY(-42.3%) 
 			skewX(-30deg) scaleY(.866) translateX(24%);
 }
-
+.cleanstate {
+  display: none
+}
 
 
 
@@ -288,9 +290,9 @@ font-size: 1.2rem;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 4rem;
-  padding-bottom: 2.5rem;
+
 }
-.pricing_card {
+.pricing_card, .payroll {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,23 +304,134 @@ font-size: 1.2rem;
   transition: all .2s;
   padding: 2rem
 }
-.pricing_card:hover {
+.pricing_card {
+  color: #000;
+}
+.pricing_card:hover, .payroll:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 23, 59, 0.1);
 }
 .pricing_container .pricing_card:first-child {
-  border-top: solid 6px #024abb
+  border-top: solid 6px #024abb;
+
 }
 .pricing_container .pricing_card:nth-child(2) {
-  border-top: solid 6px #ffa400
+  border-top: solid 6px #ffa400;
+  
 }
 .pricing_container .pricing_card:nth-child(3) {
-  border-top: solid 6px red
+  border-top: solid 6px red;
+  
 }
-.pricing_card .pricing_card-heading {
-  margin-bottom: 1.5rem;
+.pricing_container  .payroll , .talent_system {
+padding: 2rem;
+  border-radius: 5px;
+flex-direction: row;
+justify-content: space-between;
+
+  width: 37rem;
+  margin: 5rem auto 0 auto;
+color: #fff;
+background-image: linear-gradient(-180deg, #FEBE19 0%, #FEB817 49%, #FFA400 100%);
+box-shadow: 0 1.2rem 2.4rem 0 rgba(0,23,59,0.10);
+}
+.pricing_container  .payroll img {
+  width: 6.7rem
+}
+.Payroll_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.payroll_upper ,.payroll_lower {
+  display: flex;
+  align-items: center;
+}
+.payroll_upper {
+  margin-bottom: 5.5rem
+}
+.Payroll_new {
+  font-size: 1.6rem;
+
+
+}
+.payroll .pricing_card-heading {
+margin-right: auto;
+font-size: 1.8rem;
+
+}
+.payroll .priceInfo  {
+  margin-right: auto;
+  
+  }
+.payroll .priceInfo .planPrice {
+font-weight: 900;
+  font-size: 2.2rem;
+
+}
+.payroll .priceInfo .planPeriod {
+  line-height: 3.5rem;
+}
+.talent_system {
+
+}
+.talent_system .talent_upper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.talent_system .pricing_card-heading {
+  margin-right: auto
+}
+.talent_system .offers_card-list li.list-headline {
+color: #fff
+}
+.talent_system .offers_card-list {
+  text-align: center
+}
+.talent_system .free_trial {
+  color: #fff;
+  margin: 1rem auto;
+}
+.talent_system .free_trial span {
+  color: #000
+}
+.talent_system .offers_card-list li {
+  color: #fff
+  }
+.talent_system .talent_new {
+  font-size: 1.6rem;
+}
+.talent_system .pricing_card-head {
+  font-size: 1.8rem;
+  margin: 0;
+  text-transform: uppercase
+}
+.pricing_card .pricing_card-head {
   font-size: 1.8rem;
   text-transform: uppercase;
   color: #000;
+  margin: 0
+}
+.payroll .pricing_card-head {
+color: #fff
+}
+.free_trial {
+  color: #000;
+  font-weight: 500;
+}
+.free_trial span {
+  color: #ffa400;
+  font-size: 1.8rem;
+  font-weight: 900
+}
+.free_trial span::before {
+content: "✦";
+line-height: 1.9rem;
+font-size: 1.2rem;
+margin-right: .2rem;
+
+
+vertical-align: top;
 }
 
 .pricing_card .priceInfo {
@@ -329,7 +442,7 @@ font-size: 1.2rem;
   line-height: 4rem;
   font-size: 4.8rem;
   font-weight: 500;
-  color: #000;
+
   position: relative;
   text-align: center;
 }
@@ -341,16 +454,28 @@ font-size: 1.2rem;
 
   vertical-align: top;
 }
+ .payroll .planPrice::before {
+  content: "" !important;
+  }
+
+
 .pricing_card .planPeriod {
   line-height: 1.9rem;
   font-size: 1.6rem;
   text-align: left;
-  color: #000;
+
   align-self: flex-end;
 }
+
 .pricing_card .per_user {
   margin-bottom: 1.5rem;
-  font-size: 1.4rem
+  font-size: 1.4rem;
+  color: #606977;
+}
+.payroll .per_user {
+  color: #fff;
+  margin: 0;
+  display: block;
 }
 .pricing_card .pricing_team-input {
   width: 100%;
@@ -405,7 +530,7 @@ font-size: 1.2rem;
 .pricing_card .pricing_card-choosebutton:hover {
   background: #ffb42e;
 }
-.pricing_card ul {
+.pricing_card ul.pricing_menu {
   list-style: none;
   text-align: center;
 
@@ -459,20 +584,20 @@ font-size: 1.2rem;
 margin: 0;
   list-style: none;
 }
-.offers_container .offers_card .offers_card-list li{
+ .offers_card-list li{
   line-height:1.5em;
   color: #606977;
   float:left;
   display:inline;
   width:50%;
 margin-bottom: 1.2rem}
-  .offers_container .offers_card .offers_card-list li:nth-child(odd){
+ .offers_card-list li:nth-child(odd){
 font-weight: 900}
-.offers_container .offers_card .offers_card-list li:nth-last-child(-n+2) {
+ .offers_card-list li:nth-last-child(-n+2) {
   margin-bottom: 0
 }
  
-.offers_container .offers_card .offers_card-list li.list-headline {
+ .offers_card-list li.list-headline {
   font-size:1.4rem;
   color: #000;
   margin-bottom: .8rem;
