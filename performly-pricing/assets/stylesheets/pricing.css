@@ -1,0 +1,18 @@
+#header{
+	background-image: url('/assets/images/bg.jpg');
+	background-size: cover;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;  
+	height: 35rem;
+}
+
+.pricingfeature{
+	color:#404040;
+	font-family: ProximaLight;
+	font-size: 16px;
+	position:absolute;
+	height:50px;
+	width:300px;
+	text-align: left;
+	left:70px;
+}

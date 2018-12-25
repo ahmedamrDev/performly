@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require sol
+ *= require multiselect
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+$break-small: 768px
+$break-large: 992px
+
+//basic
+
+@font-face
+	font-family: 'SwissRoman'
+	src: font-url('Swiss721BT_Roman.ttf') format('truetype')
+@font-face
+	font-family: 'SwissBold'
+	src: font-url('Swiss721_Bold.ttf') format('truetype')
+@font-face
+	font-family: 'SwissLight'
+	src: font-url('Swiss721BT_Light.ttf') format('truetype')
+
+@font-face
+	font-family: 'ProximaLight'
+	src: font-url('proxima_light.otf')
+	
+@font-face
+	font-family: 'ProximaRegular'
+	src: font-url('proxima_regular.otf')
+@font-face
+	font-family: 'ProximaRegularItalic'
+	src: font-url('proxima_regular_italic.otf')
+
+@font-face
+	font-family: 'ProximaBold'
+	src: font-url('proxima_bold.otf')
+
+@font-face
+	font-family: 'ProximaBoldItalic'
+	src: font-url('proxima_bold_italic.otf')
+
+@font-face
+	font-family: 'ProximaLightItalic'
+	src: font-url('proxima_light_italic.otf')
+		
+
+.dropdown:hover 
+	@media screen and (min-width: $break-small)
+		.dropdown-menu 
+			display: block
+		
+.alert
+	margin-top: 20px
+
+.mobile
+	display: none
+
+@media screen and (max-width: $break-small)
+	.desktop
+		display: none
+	.mobile
+		display: block
+
+
+.form-control
+	min-height: 40px
+
+input.form-control, select.form-control, button.searchButton
+	min-height: 40px
+	max-height: 40px
+	height: 40px
+
+
+.pagination
+	width: 100%

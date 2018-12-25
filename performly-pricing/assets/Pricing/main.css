@@ -1,0 +1,114 @@
+﻿
+.FaceBook {
+    display: block;
+}
+
+div#DigiCertClickID_ArRhxwKsSeal {
+    margin-top: 44px !important;
+}
+
+div#DigiCertClickID_ArRhxwKs span {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .nav_item {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #copyright {
+        /*display: none;
+              margin-top:20px;*/
+    }
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    color: #666666;
+    font-size: 1.5rem;
+}
+
+.navbar-brand {
+    margin-left: 0;
+}
+
+.navbar-right {
+    padding-top: 7px;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ff6c00;
+}
+
+ul.nav a:hover {
+    color: #000;
+}
+
+nav.navbar {
+    min-height: 60px !important;
+}
+
+
+
+
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul > li > a {
+    color: black;
+}
+
+/*Menu break point*/
+@media (max-width: 870px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        margin-right: 0;
+        height: 35px;
+        padding-top: 5px;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .collapsing {
+        overflow: hidden !important;
+    }
+}
+.price-body {
+padding-top:1px;
+}
+
+

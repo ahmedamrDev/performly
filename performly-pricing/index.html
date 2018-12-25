@@ -1,0 +1,963 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" media="all" href="assets/stylesheets/sol.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/multiselect.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/datepicker.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/features.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/home.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/pricing.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/animate.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/javascripts/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <link rel="stylesheet" media="all" href="assets/stylesheets/application.css" /><link rel="stylesheet" media="all" href="assets/stylesheets/animate.css" /><link rel="stylesheet" media="all" href="assets/slick/slick.css" /><link rel="stylesheet" media="all" href="assets/slick/slick-theme.css" />
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-91777193-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <style>
+        .cke {
+            visibility: hidden;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+    <script src="assets/javascripts/application.js"></script>
+
+    <meta name="csrf-param" content="authenticity_token" /><meta name="csrf-token" content="+PEbiuNbNhRHh3R5yXVyz989btTGnpsZy8q7wZPZhIdlFrjfvqDx8oqRPSI5i/oFspP1oD2uAEMH8o39TOdLJQ==" />
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /><link rel="icon" href="assets/images/favicon.ico" type="image/ico" /><link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" />
+    <title>Get your Free Trial of Talent Performance & Intra HRMS Software</title>
+    <meta name="description" content="Learn everything about Performance Management and HR Operations. Subscribe to be updated on Talent Management, Recognition, 360 Review and HRMS-Performly" />
+    <meta name="keywords" content="Internal communication system-software- solution-app – application / Hrms system-software- solution-app – application / Internal system-software- solution-app – application / Internal communication system-software- solution-app – application / Performance management system-software- solution-app - application" />
+
+
+
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function (e, a) {
+            if (!a.__SV) {
+                var b = window;
+                var c, l, i, j = b.location, g = j.hash;
+                try {
+                    c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null };
+                    g &&
+                        c(g, "state") &&
+                        (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action &&
+                            (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "",
+                                e.title,
+                                j.pathname + j.search)));
+                } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+                    function e(b, a) {
+                        var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                0)));
+                        }
+                    } var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++)e(d, k[h]);
+                    a._i.push([b, c, f]);
+                }; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0];
+                c.parentNode.insertBefore(b, c);
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("60bc5fdf7f3128374d34e33171503ca2");
+
+    </script>
+    <!-- end Mixpanel -->
+    <script type="text/javascript">
+        mixpanel.track("Performly Site Home Page", {
+            "Video length": 213,
+            "id": "hY7gQr0"
+        });
+        //
+        $(function () {
+            $("#lblSelectProduct").hide();
+            var url = window.location.href;
+            if (url.indexOf('/#freedemo') !== -1) {
+                window.location.replace('/Default.aspx#freedemo');
+            } else if (url.indexOf('#freedemo') !== -1) {
+                $('#editModal').modal();
+            }
+        });
+        //$(function () {
+        //    $("#lblSelectProduct").hide();
+        //    var url = window.location.href;
+        //    if (url.indexOf('/#freedemo') !== -1) {
+        //        window.location.replace('/Index.aspx#freedemo');
+        //    } else if (url.indexOf('#freedemo') !== -1) {
+        //        $('#editModal').modal();
+        //    }
+        //});
+    </script>
+<title>
+
+</title></head>
+<body>
+    <form method="post" action="./index.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Zvt3T4Ftb1sFhOqqOiWRItwnw8WLGYsvxFeEioyh45NydIPFwjZERvvZcGP5s+dYKwfomfKBYO/nvgZzDYEuc7TLhgZkg940dlkx6qsaPjg=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6F8B5491" />
+</div>
+        <nav class="navbar navbar-fixed-top" style='margin: 0; background-color: #ffffff'>
+            <div class="container-fluid" style="margin: 0 5%;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-left" href="/" style="color: #eee"></a>
+                    <a href="/" class="HomeLogo">
+                        <img src="assets/images/performlyLogo.png" alt="Logo" class="img-responsive" />
+                    </a>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li class="dropdown">
+                            <a href="http://performly.com/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li style=""><a href="/Talent.aspx">Talent</a></li>
+                                <li style=""><a href="/Intra.aspx">Intra</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="http://blog.performly.com/">Blog</a></li>
+                        <li><a href="/Get-Free-Trial-Talent-Performance-Management-Internal-HRMS-Softwares-Solutions-Applications.aspx">Pricing</a></li>
+                        <li><a href="/Contactus.aspx">Contact Us</a></li>
+                        
+                        <li><a id="login" data-toggle="modal" data-target="#editModal">Free Demo</a></li>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div id="body" style="margin: 50px 0px 0px; min-height: 362px;">
+            
+    <link href="assets/Pricing/style.css" rel="stylesheet" />
+    <link href="assets/Pricing/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <script src="assets/Pricing/main.js"></script>
+    <div class="price-body">
+        <div class="heading_box">
+            <h1>Pricing</h1>
+            <p>As we in Performly care for how your team works effectively, We also are assuring that our packages are going to be perfectly proper for your team size!</p>
+        </div>
+        <ul class="tab-group">
+            <div id="FT" class="tab-group-wrap ">
+                <li><a data-toggle="tab" href="#FTB">1-250</a></li>
+                <div class=""></div>
+            </div>
+            <div id="ST" class="tab-group-wrap">
+                <li><a data-toggle="tab" href="#STB">250-500</a></li>
+                <div class=""></div>
+            </div>
+            <div id="TT" class="tab-group-wrap">
+                <li><a data-toggle="tab" href="#TTB">500-1500</a></li>
+                <div class=""></div>
+            </div>
+            <div id="FTP" class="tab-group-wrap">
+                <li class="active"><a data-toggle="tab" href="#FTBP">1500+</a></li>
+                <div class=""></div>
+            </div>
+        </ul>
+        <ul class="tab-group">
+            <div id="intraBtn" class="tab-group-wrap ">
+                <li class="active"><a data-toggle="tab" href="#intra">Intra</a></li>
+                <div class=""></div>
+            </div>
+            <div id="talentBtn" class="tab-group-wrap">
+                <li><a data-toggle="tab" href="#talent">Talent</a></li>
+                <div class=""></div>
+            </div>
+        </ul>
+        <div class="tab-content">
+            <div id="intra" class="tab-pane fade in active">
+
+                <div class="switch">
+
+
+                    <input type="radio" class="switch-input" name="plan" value="monthly" id="intramonthly" >
+                    <label for="intramonthly" class="switch-label switch-label-off">Monthly</label>
+
+                    <input type="radio" class="switch-input" name="plan" value="month" id="intramonth" checked>
+                    <label for="intramonth" class="switch-label switch-label-on">Yearly <span class="year_offer">(GET 10% OFF!)</span></label>
+
+                    
+
+
+
+                    <span class="switch-selection"></span>
+                </div>
+
+                <div class="pricing_container">
+                    <div class="pricing_card">
+                        <img src="" alt="">
+                        <h2 class="pricing_card-heading">Team</h2>
+                        <div class="priceInfo">
+
+
+                            <div class="tab-content">
+                                <div id="" class="FTBP tab-pane fade in active">
+                                    <div class="planPrice" data-value="2600" id="FPITP" data-fr="">0.5</div>
+                                </div>
+                                <div id="" class="FTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="FITP" data-fr="">1</div>
+                                </div>
+                                <div id="" class="STB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="SITP" data-fr="">0.9</div>
+                                </div>
+                                <div id="" class="TTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="TITP" data-fr="">0.7</div>
+                                </div>
+                            </div>
+
+                            <div class="planPeriod">/mo</div>
+                        </div>
+                        <span class="per_user">Per user</span>
+
+                        <p class="free_trial"><span>Free</span> for first 3 months</p>
+                        <div class="hr-divider"></div>
+
+
+                        <ul class="pricing_menu">
+                            <li class="pricing_list">Attendance Management</li>
+                            <li class="pricing_list">Compensation / Overtime Management</li>
+                            <li class="pricing_list">Leaves Management</li>
+                            <li class="pricing_list">Pay slip system</li>
+                            <li class="pricing_list">Announcements</li>
+                            <li class="pricing_list">Survey / Poll</li>
+                            <li class="pricing_list">Content Pages (Offers, Employee Handbook, Policy and Useful links)</li>
+                            
+                            <li class="pricing_list"><b>2</b> Integration</li>
+                        </ul>
+                        <span class="ACWI" style="display:none; color:#ffa400">Annual commitment</span>
+                    </div>
+                    <div class="pricing_card">
+
+                        <img src="" alt="">
+                        <h2 class="pricing_card-heading">Business</h2>
+                        <div class="priceInfo">
+
+
+                            <div class="tab-content">
+                                <div id="" class="FTBP tab-pane fade in active">
+                                    <div class="planPrice" data-value="2600" id="B_FPITP" data-fr="">1</div>
+                                </div>
+                                <div id="" class="FTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="B_FITP" data-fr="">2</div>
+                                </div>
+                                <div id="" class="STB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="B_SITP" data-fr="">1.5</div>
+                                </div>
+                                <div id="" class="TTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="B_TITP" data-fr="">1.2</div>
+                                </div>
+                            </div>
+
+                            <div class="planPeriod">/mo</div>
+                        </div>
+                        <span class="per_user">Per user</span>
+                        <div class="hr-divider"></div>
+
+                        <ul class="pricing_menu">
+                            <li class="pricing_list">On-Boarding Recruitment System</li>
+                            <li class="pricing_list">Resignation System</li>
+                            <li class="pricing_list">Meeting Rooms Reservation system</li>
+                            <li class="pricing_list">Internal Appointments Reservation</li>
+                            <li class="pricing_list">HR Letter  Request</li>
+                            <li class="pricing_list">Business cards Request</li>
+                            <li class="pricing_list">Contract renewal</li>
+                            
+                            <li class="pricing_list"><b>3</b> Integrations</li>
+                        </ul>
+
+
+                                                <span class="ACWI" style="display:none; color:#ffa400">Annual commitment</span>
+
+                    </div>
+                    <div class="pricing_card">
+
+                        <img src="" alt="">
+                        <h2 class="pricing_card-heading">Enterprise</h2>
+                        <div class="priceInfo">
+
+                            <div class="tab-content">
+                                <div id="" class="FTBP tab-pane fade in active">
+                                    <div class="planPrice" data-value="2600" id="E_FPITP" data-fr="">1.5</div>
+                                </div>
+                                <div id="" class="FTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="E_FITP" data-fr="">3</div>
+                                </div>
+                                <div id="" class="STB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="E_SITP" data-fr="">2.5</div>
+                                </div>
+                                <div id="" class="TTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="E_TITP" data-fr="">2</div>
+                                </div>
+                            </div>
+                            <div class="planPeriod">/mo</div>
+                        </div>
+                        <span class="per_user">Per user</span>
+                        <div class="hr-divider"></div>
+
+                        <ul class="pricing_menu">
+                            <li class="pricing_list">Loan System</li>
+                            <li class="pricing_list">Training System</li>
+                            <li class="pricing_list">Travel Management</li>
+                            <li class="pricing_list">Expenses system</li>
+                            <li class="pricing_list">Careers/Interviews system</li>
+                            <li class="pricing_list">Purchase Requisitions</li>
+                            <li class="pricing_list">Maintenance system</li>
+                            <li class="pricing_list">Medical and Refund</li>
+                            <li class="pricing_list">Transportation</li>
+                            <li class="pricing_list"><b>Unlimited</b> Integrations</li>
+                        </ul>
+                                                <span class="ACWI" style="display:none; color:#ffa400">Annual commitment</span>
+
+                    </div>
+
+                    <div class="pricing_card payroll">
+                        <div class="Payroll_content">
+                            <div class="payroll_upper">
+                                <div class="pricing_card-heading">
+                                    
+                                    <h2 class="pricing_card-head">Payroll System</h2>
+                                </div>
+                                <img src="assets/Pricing/images/money.svg">
+                            </div>
+                            <div class="payroll_lower">
+                                <div class="priceInfo">
+                                    <div class="planPrice" data-value="1" data-fr="" id="PRP">$1</div>
+                                    <div class="planPeriod">/mo</div>
+                                </div>
+                                <span class="per_user">Per user</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="heading_box">
+                    <h1>Offers</h1>
+                </div>
+                <div class="offers_container">
+                    <div class="offers_card">
+                        <h2>Team + Payroll</h2>
+
+                        <p class="free_trial"><span>Free</span> for first 3 months</p>
+                        <ul class="offers_card-list">
+                            <li class="list-headline">Staff number</li>
+                            <li class="list-headline">Price/user</li>
+                            <li>1-250</li>
+                            <li>$1.5</li>
+                            <li>250-500</li>
+                            <li>$1.2</li>
+                            <li>500-1500</li>
+                            <li>$1</li>
+                            <li>1500+</li>
+                            <li>$0.5</li>
+                        </ul>
+
+                    </div>
+                    <div class="offers_card" style="height: 100%">
+                        <h2>Enterprise + Payroll + Talent
+                </h2>
+                        <p>
+                            <br />
+                            <ul class="offers_card-list">
+                                <li class="list-headline">Staff number</li>
+                                <li class="list-headline">Price/user</li>
+                                <li>1-250</li>
+                                <li>$5</li>
+                                <li>250-500</li>
+                                <li>$4</li>
+                                <li>500-1500</li>
+                                <li>$3</li>
+                                <li>1500+</li>
+                                <li>$2</li>
+
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="talent" class="tab-pane ">
+                <div class="switch">
+
+
+                    <input type="radio" class="switch-input" name="plan" value="monthly" id="talentmonthly" checked>
+                    <label for="talentmonthly" class="switch-label switch-label-off">Monthly</label>
+
+                    <input type="radio" class="switch-input" name="plan" value="month" id="talentmonth" >
+                    <label for="talentmonth" class="switch-label switch-label-on">Yearly <span class="year_offer">(GET 10% OFF!)</span></label>
+
+                    
+
+
+
+                    <span class="switch-selection"></span>
+                </div>
+                <div class="pricing_container">
+                    <div style="width: 25%"></div>
+                    <div class="pricing_card" style="width: 50%">
+                        <img src="" alt="">
+                        <h2 class="pricing_card-heading">Talent</h2>
+                        <div class="priceInfo">
+
+                            <div class="tab-content">
+                                <div id="" class="FTBP tab-pane fade in active">
+                                    <div class="planPrice" data-value="2600" id="FPTTP" data-fr="">1</div>
+                                </div>
+                                <div id="" class="FTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="FTTP" data-fr="">2</div>
+                                </div>
+                                <div id="" class="STB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="STTP" data-fr="">1.5</div>
+                                </div>
+                                <div id="" class="TTB tab-pane">
+                                    <div class="planPrice" data-value="2600" id="TTTP" data-fr="">1.2</div>
+                                </div>
+                            </div>
+                            <div class="planPeriod">/mo</div>
+                        </div>
+                        <span class="per_user">Per user</span>
+
+                        <p class="free_trial"><span>Free</span> for first 3 months</p>
+                        <div class="hr-divider"></div>
+
+
+                        <ul class="pricing_menu">
+                            <li class="pricing_list">Goals & Competencies</li>
+                            <li class="pricing_list">360 Performance Reviews</li>
+                            <li class="pricing_list">Feedback</li>
+                            <li class="pricing_list">1:1 Meetings</li>
+                            <li class="pricing_list">Recognition</li>
+                            <li class="pricing_list">To-Do List</li>
+                        </ul>
+                                                <span class="ACWT" style="display:none; color:#ffa400">Annual commitment</span>
+
+                    </div>
+                    <div style="width: 25%"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+
+        <!--//////////////////////////////////////////////////////////////////////Demo Request Modal//////////////////////////////////////////////////////////////////////-->
+        <div>
+            <div class="modal fade" id="editModal" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div id="showSignUp">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h2 class="modal-title" style="font-size: 16px;"><span class="TitleDemo">Free Demo</span></h2>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="">
+                                <div class="getDemoContent">
+                                    <div id="talent" class="tab-pane fade in active">
+                                        <div class="modal-body">
+                                            <form class="simple_form new_demorequest" id="new_demorequest" action="/demorequests" accept-charset="UTF-8" method="post">
+                                                <input name="utf8" type="hidden" value="✓" />
+                                                <input type="hidden" name="authenticity_token" value="WaTeJk6/WAbNL24zdFGh8RD8r5/G2gTa/O8k+f+BByrEQ31zE0Sf4AA5J2iEryk7fVI06z3qn4Aw1xLFIL/IiA==" />
+
+                                                <div class="row">
+                                                    <div id="divError" class="DemoAlert hidden"></div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group string required demorequest_name Select-Title">
+                                                            <label class="control-label string required" for="demorequest_name">
+                                                                <abbr title="required">Select Product: <span class="Red">*</span></abbr>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="talent" id="txttypeTalent" />
+                                                                <img src="assets/images/talentLogo.png" /></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="intra" id="txttypeIntra" />
+                                                                <img src="assets/images/intraLogo.png" /></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group string required demorequest_name">
+                                                            <label class="control-label string required" for="demorequest_name">
+                                                                <abbr title="required">Name <span class="Red">*</span></abbr></label>
+                                                            <input class="form-control string required" required="required" aria-required="true" type="text" value="" name="demorequest[name]" id="txtName2" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group email required demorequest_email">
+                                                            <label class="control-label email required" for="demorequest_email">
+                                                                <abbr title="required">Business Email <span class="Red">*</span></abbr>
+                                                            </label>
+                                                            <input class="form-control string email required" aria-required="true" type="email" value="" name="demorequest[email]" id="txtEmail2" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group string required demorequest_company">
+                                                            <label class="control-label string required" for="demorequest_company">
+                                                                <abbr title="required">Company <span class="Red">*</span></abbr></label>
+                                                            <input class="form-control string required" required="required" aria-required="true" type="text" value="" name="demorequest[company]" id="txtCompany2" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group string optional demorequest_role">
+                                                            <label class="control-label string optional" for="demorequest_role">Role</label>
+                                                            <input class="form-control string optional" type="text" value="" name="demorequest[role]" id="txtTitle2" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group tel optional demorequest_phone">
+                                                            <label class="control-label tel optional" for="demorequest_phone">Phone</label>
+                                                            <input class="form-control string tel optional" type="tel" value="" name="demorequest[phone]" id="txtPhone2" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group tel optional demorequest_phone">
+                                                            <label class="control-label tel optional" for="demorequest_phone">Website <span class="Red">*</span></label>
+                                                            <input class="form-control string tel optional" type="tel" value="" name="demorequest[phone]" id="txtWebSite" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12">
+                                                        <div class="form-group text optional demorequest_message">
+                                                            <label class="control-label text optional" for="demorequest_message">Message</label><textarea class="form-control text optional" name="demorequest[message]" id="txtMessage2"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div id="showNumOfUsers">
+                                                        <div class="col-xs-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label tel optional" for="demorequest_phone">Number Of Users <span class="Red">*</span></label>
+                                                                <select class="form-control" name="demorequest[numofuser]" id="numofuser">
+                                                                    <option>1-10</option>
+                                                                    <option>10-250</option>
+                                                                    <option>250-500</option>
+                                                                    <option>500-1500</option>
+                                                                    <option>1500+</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br />
+                                                    <div id="showSingUpMsg" class="col-xs-12 col-sm-12">
+                                                        * Only valid business e-mail and website will be considered.
+                                                    </div>
+                                                    <div id="lblSelectProduct" class="col-xs-12 col-sm-12">
+                                                        * Please Select Product
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-12">
+                                                        <center>
+                                                            <input type="button" name="commit" value="Send" onclick="AddDemoRequest()" class="btn btn-default btn btn-primary" style="margin-top:20px; padding:10px 100px; font-size:20px; font-family:ProximaBold;" />
+                                                        </center>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div style="background-color: #003faf; /*min-height: 210px; */    display: inline-table; margin-top: 100px; padding-top: 30px; width: 100%; padding-left: 5%; padding-right: 5%; position: relative; bottom: -5px;" class="wow fadeIn">
+            <!--         <span class ="footerlink">Features</span> -->
+            <a href="/pricing.aspx" class="footerlink" style="display: none">Pricing</a>
+            <a style="display: none" href="/blog.aspx" class="footerlink">Blog</a>
+            <!--         <span class ="footerlink">About</span> -->
+            <!-- <a class="footerlink" href="mailto:info@performly.com">Contact</a> -->
+            <div class="col-md-3">
+                <div style="margin: 20px 0px 10px;" class="sharingDiv">
+
+                    <a href="https://www.linkedin.com/company/performly" style="margin-right: 5px" target="_blank">
+                        <img style="width: 30px;" src="assets/images/linkedin.png" alt="Linkedin "></a>
+                    <a href="https://twitter.com/performlyMENA" style="margin-right: 5px" target="_blank">
+                        <img style="width: 30px;" src="assets/images/twitter.png" alt="Twitter "></a>
+                    <a href="https://www.facebook.com/Performly.software/" style="margin-right: 5px" target="_blank">
+                        <img style="width: 30px;" src="assets/images/facebook.png" alt="Facebook"></a>
+                    <div style="padding-top: 12px">
+                        <a style="font-family: ProximaRegular; font-size: 16px; font-color: white" href="/Contactus.aspx">Contact us</a><br />
+                        <span style="color: #fff; font-family: ProximaRegular;">2035 Sunset Lake Road, Suite B-2, in the city of Newark,<br />
+                            State of Delaware zip code 19702 and county of New Castle. USA.<br />
+                            
+                            
+
+                        </span>
+                        <br />
+                        <span id="copyright" style="font-family: ProximaRegular; color: #ffffff; font-size: 16px; opacity: 0.5;">Performly © 2018</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="FaceBook">
+                    <div class="fb-like-box" data-href="https://www.facebook.com/performly.software/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" data-colorscheme="light"></div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="powerdByDiv">
+                    <!-- Begin DigiCert site seal HTML and JavaScript -->
+                    <div id="DigiCertClickID_ArRhxwKs" data-language="en">
+                        <a href="https://www.digicert.com/wildcard-ssl-certificates/">DigiCert.com</a>
+                    </div>
+                    <script type="text/javascript">
+                        var __dcid = __dcid || []; __dcid.push(["DigiCertClickID_ArRhxwKs", "3", "m", "black", "ArRhxwKs"]); (function () { var cid = document.createElement("script"); cid.async = true; cid.src = "//seal.digicert.com/seals/cascade/seal.min.js"; var s = document.getElementsByTagName("script"); var ls = s[(s.length - 1)]; ls.parentNode.insertBefore(cid, ls.nextSibling); }());
+                </script>
+
+                    <!-- End DigiCert site seal HTML and JavaScript -->
+                    <a href='https://www.g2crowd.com/products/performly/' target="_blank" class="UsersLoveUs">
+                        <img border="0" src="assets/images/Asset_Badge_UsersLoveUs.png" />
+                    </a>
+
+                    <a class="capteraLnk" href='http://www.capterra.com/performance-appraisal-software/reviews/150134/Performly/Performly' target="_blank">
+                        <img border="0" src="assets/images/Capterra.png" />
+                    </a>
+
+                    <a href="http://a15.com/en-us/" target="_blank" class="A15Logo">
+                        <img src="assets/images/powered.png" alt="Powered" /></a>
+                </div>
+            </div>
+
+
+            
+            <div style="padding-bottom: 10px;">
+            </div>
+        </div>
+
+        <!-- FB -->
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
+        <script>
+            $(".navbar-toggle").click(function (e) {
+                $(".navbar-toggle").toggleClass('open');
+            });
+        </script>
+        <script>
+            var vph = $(window).height() - 300;
+            $("#body").css({ "min-height": vph + 'px' });
+
+            function direct(url) {
+                window.location = url;
+            }
+
+            //////////////////////////////////////////////////////////////////////AddDemoRequest//////////////////////////////////////////////////////////////////////
+            function AddDemoRequest() {
+                var intraSelected = $("#txttypeIntra").is(':checked');
+                var talentSelected = $("#txttypeTalent").is(':checked');
+                if (intraSelected == false && talentSelected == false) {
+                    $("#lblSelectProduct").addClass('error');
+                    $("#lblSelectProduct").show();
+
+                    return;
+                }
+                else {
+                    $("#lblSelectProduct").removeClass('error');
+                    $("#lblSelectProduct").hide();
+                }
+                var isvalid = true;
+                var name = $("#txtName2").val();
+                if (name == '') {
+                    $("#txtName2").css("border-color", "red");
+                    isvalid = false;
+                }
+                else
+                    $("#txtName2").css("border-color", "");
+
+                var company = $("#txtCompany2").val();
+                if (company == '') {
+                    $("#txtCompany2").css("border-color", "red");
+                    isvalid = false;
+                }
+                else
+                    $("#txtCompany2").css("border-color", "");
+
+                var title = $("#txtTitle2").val();
+                var type = "";//$("#txttype").val();
+                if (intraSelected == true)
+                    type = "Intra Selected ";
+                if (talentSelected == true)
+                    type += "Talent Selected";
+
+                var phone = $("#txtPhone2").val();
+
+                var email = $("#txtEmail2").val();
+                if (email == '') {
+                    $("#txtEmail2").css("border-color", "red");
+                    isvalid = false;
+                }
+
+                else {
+                    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    if (!re.test(email)) {
+                        $("#txtEmail2").css("border-color", "red");
+                        isvalid = false;
+                    }
+                    else
+                        $("#txtEmail2").css("border-color", "");
+                }
+
+                var message = $("#txtMessage2").val();
+                var numofuser = 0;
+                if ($('#showNumOfUsers').is(":visible")) {
+                    numofuser = $("#numofuser").val();
+                }
+                if (numofuser == 0) {
+                    $("#numofuser").css("border-color", "red");
+                    isvalid = false;
+                }
+                else
+                    $("#txtWebSite").css("border-color", "");
+
+                var webSite = $("#txtWebSite").val();
+                if (webSite == '') {
+                    $("#txtWebSite").css("border-color", "red");
+                    isvalid = false;
+                }
+                else
+                    $("#txtWebSite").css("border-color", "");
+
+                if (isvalid) {
+                    var topass = {};
+                    topass.name = name;
+                    topass.company = company;
+                    topass.title = title;
+                    topass.email = email;
+                    topass.phone = phone;
+                    topass.message = message;
+                    topass.type = type;
+                    topass.numofuser = numofuser;
+                    topass.webSite = webSite;
+                    topass.random = "rand";
+
+                    $.ajax({
+                        type: "POST",
+                        //url: "/index.aspx/AddDemoRequest",
+                        url: "/Default.aspx/AddDemoRequest",
+                        data: JSON.stringify(topass),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (msg) {
+                            debugger;
+                            var result = JSON.parse(msg.d);
+                            if (result.IsOk) {
+                                window.location.assign("/ThankYou.aspx");
+                            } else {
+                                $('#divError').removeClass('hidden');
+                                $('#divError').text(result.ResultMessage);
+                            }
+                        },
+                        error: function (err) {
+                            alert(err.responseJSON.Message);
+                        }
+                    });                    
+                }
+            }
+
+
+        </script>
+        <style>
+            .FaceBook {
+                display: block;
+            }
+
+            div#DigiCertClickID_ArRhxwKsSeal {
+                margin-top: 44px !important;
+            }
+
+            div#DigiCertClickID_ArRhxwKs span {
+                display: none !important;
+            }
+
+            @media (min-width: 768px) {
+                .nav_item {
+                    display: none !important;
+                }
+            }
+
+            @media (max-width: 768px) {
+                #copyright {
+                    /*display: none;
+              margin-top:20px;*/
+                }
+            }
+
+            .navbar-nav > li > a, .navbar-brand {
+                font-family: ProximaRegular;
+                color: #666666;
+                font-size: 15px;
+            }
+
+            .navbar-brand {
+                margin-left: 0;
+            }
+
+            .navbar-right {
+                margin-right: 100px;
+                padding-top: 7px;
+            }
+
+            a:hover {
+                text-decoration: none;
+                background-color: transparent;
+                color: #ff6c00;
+            }
+
+            ul.nav a:hover {
+                color: #000;
+            }
+
+            nav.navbar {
+                min-height: 60px !important;
+            }
+
+
+
+
+            #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul > li > a {
+                color: black;
+            }
+
+            /*Menu break point*/
+            @media (max-width: 870px) {
+                .navbar-header {
+                    float: none;
+                }
+
+                .navbar-toggle {
+                    display: block;
+                    margin-right: 0;
+                    height: 35px;
+                    padding-top: 5px;
+                }
+
+                .navbar-collapse {
+                    border-top: 1px solid transparent;
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+                }
+
+                    .navbar-collapse.collapse {
+                        display: none !important;
+                    }
+
+                .navbar-nav {
+                    float: none !important;
+                    margin: 7.5px -15px;
+                }
+
+                    .navbar-nav > li {
+                        float: none;
+                    }
+
+                        .navbar-nav > li > a {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+
+                .navbar-text {
+                    float: none;
+                    margin: 15px 0;
+                }
+                /* since 3.1.0 */
+                .navbar-collapse.collapse.in {
+                    display: block !important;
+                }
+
+                .collapsing {
+                    overflow: hidden !important;
+                }
+            }
+        </style>
+    </form>
+
+
+    <script>
+        window.intercomSettings = {
+            app_id: "hr5r43qm"
+        };
+    </script>
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/hr5r43qm'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+    <script>
+        var nb = $('nav.navbar-fixed-top, .topBar');
+        $('.modal')
+            .on('show.bs.modal', function () {
+                nb.width(nb.width());
+            })
+            .on('hidden.bs.modal', function () {
+                nb.width(nb.width('auto'));
+            });
+    </script>
+
+</body>
+</html>

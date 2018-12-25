@@ -1,0 +1,38 @@
+#header{
+	background-image: url('/assets/images/bg.jpg');
+	background-size: cover;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;  
+	height: 35rem;
+}
+
+.featuredescription{
+	color:#404040;
+	font-family: "ProximaLight";
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.featuretitle{
+	font-family: ProximaBold;
+	color:white; 
+	font-size:40px; 
+	margin-top:40px;
+}
+
+.featuresubtitle{
+	font-family: ProximaLight; 
+	color:white; 
+	font-size:23px; 
+	margin-top:5px; 
+}
+@media (max-width: 726px){
+        .featuretitle{
+        	font-size: 25px;
+        }
+        .featuresubtitle{
+        	font-size: 20px;
+        	padding: 0 15px;
+        }
+
+    }
