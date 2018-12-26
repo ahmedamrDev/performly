@@ -136,6 +136,7 @@ nav
   list-style: none;
   padding: 0;
   display: flex;
+
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5rem
@@ -629,12 +630,35 @@ a.capteraLnk {
 
 
 
+.pricing_card_talent {
+  width: 50%;
+  margin: 0 auto
+}
 
 @media (max-width: 870px) {
   .pricing_container {
   }
-  .pricing_card {
+  .pricing_card ,.offers_card , .pricing_card_talent{
     width: 47%;
     margin-bottom: 3rem
+  }
+}
+
+@media (max-width: 500px) {
+  .pricing_container {
+  }
+  .pricing_card ,.offers_card , .pricing_card_talent, .heading_box p{
+    width: 100%;
+    margin-bottom: 3rem
+  }
+  .tab-group {
+  
+    flex-wrap: wrap;
+   
+  }
+}
+@media (min-width: 1025px) {
+  .pricing_card_talent {
+    width: 30%;
   }
 }

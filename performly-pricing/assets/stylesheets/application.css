@@ -8939,7 +8939,6 @@ input.form-control, select.form-control, button.searchButton {
 
 .pageContent{margin-top: 160px;}
 
-h2{text-align:center;color:#003faf;font:37.5pt ProximaBold;padding: 15px; }
 h3{color:#003faf;font-family: ProximaRegular;font-size:25pt;	text-align: left;}
 .intraSection.pageContent p{font-family: ProximaRegular;font-size:19.5pt;}
 .blueDiv{background-color: #003faf;}
@@ -9120,7 +9119,6 @@ h3{color:#003faf;font-family: ProximaRegular;font-size:25pt;	text-align: left;}
 
 /***********************************TABS**********************************************/
 .tab-pane {
-  padding: 15px 5px;
 }
 .responsive-tabs.nav-pills {
   position: relative;
