@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/') format('woff2'),
+      url('../fonts/AvenirLTStd-Medium.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Medium.ttf') format('truetype'),
+      url('../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Heavy.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Heavy.ttf') format('truetype'),
+      url('../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('AvenirLTStd-Book.woff2') format('woff2'),
+      url('AvenirLTStd-Book.woff') format('woff'),
+      url('AvenirLTStd-Book.ttf') format('truetype'),
+      url('AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --light-grey-blue: #acb1b8;
+  --slate-grey: #606977;
+  --deep-red: #ac0202;
+  --kelly-green: #02ac21;
+  --very-light-pink: #e3e3e3;
+  --white: #f4f4f4;
+  --blue: #024abb;
+  --orange-yellow: #ffa400;
+  --aqua: #13cdeb;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Avenir LT Std';
+  font-weight: 500;
+  max-width: 100%;
+  line-height: 1.7;
+  color: #606977;
+  background: linear-gradient(#024abb 25%, #fff 25% , #fff 100%);
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  color: #acb1b8
+}
+
+.hr-divider {
+  color: #fff;
+  margin: 2rem auto;
+  width: 100%;
+}
+.hr-divider::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+}
+
+.main-container {
+  /* display: flex; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+
+
+.main__right-container {
+  width: 45%;
+  margin:  0 auto;
+  border-radius: 4px;
+  box-shadow: 0 12px 24px 0 rgba(0, 23, 59, 0.1);
+  background-color: #ffffff;
+  padding: 4.5rem;
+}
+
+.main__right-heading {
+ 
+}
+
+.main__right-heading img{
+  width: 25.4rem;
+
+}
+.main__right-heading h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000000;
+  margin-top: 1rem
+}
+.main__right-heading h3{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #606977;
+}
+
+
+
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.2rem
+}
+.form__group:first-child {
+  margin-top: 2.2rem
+}
+.form__label{
+  margin-bottom: .8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.form__input {
+  height: 5.4rem;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+  border-radius: .4rem;
+  border: 1px solid #e3e3e3
+}
+.form__group input {
+  width: 100%;
+}
+.form-flexalign {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.form__signinButton {
+  background: #ffa400;
+  height: 5.8rem;
+  border-radius: .5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Avenir LT Std';
+  font-weight: 900;
+  font-style: normal;
+  border: none;
+  width: 17rem;
+  cursor: pointer;
+ 
+  transition: all .2s;
+  margin-right: auto
+}
+.form__signinButton:hover {
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+.form__signinButton:active {
+
+box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.form-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.form-footer p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 1.5rem;
+  color: var(--slate-grey);
+}
+.form-footer a {
+
+
+  height: 4.7rem;
+  padding: .8rem 2rem;
+  border-radius: .4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--kelly-green);
+  background-color: rgba(2, 172, 33, 0.1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+  @media (max-width: 500px) {
+      
+        .main__right-container {
+          width: 90%;
+          padding: 3rem;
+        }
+    
+        .form__input {
+          width: 100%;
+        }
+       
+      }
+      @media (min-width: 1500px) {
+      
+        .main__right-container {
+          width: 30%;
+        }
+    
+       
+       
+      }
