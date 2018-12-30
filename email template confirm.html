@@ -59,6 +59,7 @@
       @-ms-viewport {
         width: 320px;
       }
+
       @viewport {
         width: 320px;
       }
@@ -97,6 +98,7 @@
       table.full-width-mobile {
         width: 100% !important;
       }
+
       td.full-width-mobile {
         width: auto !important;
       }
@@ -105,7 +107,7 @@
 </head>
 
 <body>
-  <div style="">
+  <div>
     <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
@@ -134,7 +136,9 @@
                       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                         <tbody>
                           <tr>
-                            <td style="width:200px;"> <img height="auto" src="https://www.performly.com/assets/images/performlyLogo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="200" /> </td>
+                            <td style="width:200px;"> <img height="auto" src="https://www.performly.com/assets/images/performlyLogo.png"
+                                style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                width="200" /> </td>
                           </tr>
                         </tbody>
                       </table>
@@ -143,19 +147,20 @@
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;line-height:25px;text-align:left;color:#000000;">
-                        <p> Hello, </p>
+                        <p> Hello ##FullName##, </p>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:helvetica;font-size:18px;font-weight:700;line-height:1;text-align:left;color:#024abb;"> Confirm your email address </div>
+                      <div style="font-family:helvetica;font-size:18px;font-weight:700;line-height:1;text-align:left;color:#024abb;">
+                        Confirm your email address </div>
                     </td>
                   </tr>
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;line-height:25px;text-align:left;color:#000000;">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum, nisi finibus tempor lobortis, leo felis aliquam ligula, et porttitor leo enim vel felis. </p>
+                        <p> Thank you for registering a new account at Performly. </p>
                       </div>
                     </td>
                   </tr>
@@ -163,9 +168,11 @@
                     <td align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                         <tr>
-                          <td align="center" bgcolor="#ffa400" role="presentation" style="border:none;border-radius:3px;cursor:auto;height:40px;padding:10px 25px;" valign="middle"> <a href="#" style="color:white;font-family:Helvetica;font-size:18px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;" target="_blank">
-              I confirm my email address
-            </a> </td>
+                          <td align="center" bgcolor="#ffa400" role="presentation" style="border:none;border-radius:3px;cursor:auto;height:40px;padding:10px 25px;"
+                            valign="middle">
+                            <a href="##VerifyEmailHref##" style="color:white;font-family:Helvetica;font-size:18px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;"
+                              target="_blank">I confirm my email address</a>
+                          </td>
                         </tr>
                       </table>
                     </td>
@@ -173,7 +180,8 @@
                   <tr>
                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:14px;line-height:25px;text-align:left;color:#606977;">
-                        <p> If you don't know why you got this email, please tell us straight away so we can fix this for you </p>
+                        <p> If you don't know why you got this email, please <a href="mailto:support@performly.com">tell us</a> straight away so we can fix this
+                          for you.</p>
                       </div>
                     </td>
                   </tr>
@@ -240,7 +248,7 @@
             >
           <![endif]-->
               <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:16px;line-height:25px;text-align:center;color:#606977;">
-                <p> Performly © 2018 </p>
+                <p> Performly © ##YearCurrent## </p>
               </div>
               <!--[if mso | IE]>
             </td>
